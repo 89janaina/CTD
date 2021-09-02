@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;  
+}
+
+body {
+    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/white-and-grey-tech-motion-design-with-hexagons-video-animation-ultra-hd-4k-3840x2160_sk09dmntg_thumbnail-1080_01.png);
+    height: 1080px;
+}
+
+header {
+    width: 100%;
+    background-color: yellow;
+    position: fixed;
+    padding: 5px;
+    z-index: 100;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+header img {
+    width: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+ }
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+.produtos{
+    width: 100%;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 12px;
+    position: absolute;
+    top: 120px;
+    z-index: 0;   
+}
+
+.box-produtos{
+    margin: 36px 64px;
+    position: relative;
+    z-index: 0;  
+}
+
+.produto{
+    width: 300px;
+    height: 300px;
+    margin-top: 12px;
+    padding: 20px 12px;
+    transition: ease-in-out 1.0s;
+    z-index: 0;  
+}
+
+.comprar{
+    position: absolute;
+    top: 100%;
+    right: 25%;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    color: rgb(190, 190, 190);
+    border-color: rgb(190, 190, 190);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+button img {
+    width: 50px;
+    border: none;
+}
