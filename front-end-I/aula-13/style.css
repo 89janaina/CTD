@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: rgb(224, 181, 255);
+}
+
+header {
+    width: 100%;
+    top: 0;
+    background-color: rgb(113, 0, 189);
+    padding: 50px;
+    z-index: 100;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+form {
+    font-family: 'Roboto', Arial, sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+h1{
+    font-size: 28px;
+    padding: 15px;
+}
+
+div {
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+  }
+
+input, select, textarea {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 12px;
+    width: 70%;
+}
+
+input, select {
+    height: 20px;
+}
+
+#botao {
+    text-align: center;
+}
+
+button {
+   width: 30%;
+   height: 30px;
+}
