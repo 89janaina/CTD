@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="https://sodiedoces.com.br/img/logo-og-image-min.png" alt="Sodiê">
+        <h1>FORMULÁRIO DE PEDIDO</h1>
+    </header>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Informações do pedido</legend>
+
+            <div>
+                <input type="checkbox" name="item"  checked id="item">
+                <label for="item">Bolo de Chocolate</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="item"  checked id="item">
+                <label for="item">Bolo Red Velvet</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="item"  checked id="item">
+                <label for="item">Bolo de Coco</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="item"  checked id="item">
+                <label for="item">Bolo de Abacaxi</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="item"  checked id="item">
+                <label for="item">Bolo Trufado</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Informações de contato</legend>
+
+            <div>
+                <label for="name">Nome</label>
+                <input type="name" name="name" id="name">
+            </div>
+
+            <div>
+                <label for="lastname">Sobrenome</label>
+                <input type="name" name="name" id="lastname">
+            </div>
+
+            <div>
+                <label for="phone">Telefone</label>
+                <input type="phone" name="phone" id="phone">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Informações para entrega</legend>
+
+            <div>
+                <label for="adress">Endereço (para entrega)</label>
+                <input type="adress" name="adress" id="adress">
+            </div>
+
+            <div>
+                <label for="city">Cidade</label>
+                <input type="search" list="cities" name="city" id="city">
+                <datalist id="cities">
+                    <option value="São Paulo">
+                    <option value="São Bernardo">
+                    <option value="São Caetano">
+                    <option value="Santo André">
+                </datalist>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Forma de pagamento</legend>
+
+            <div>
+                <input type="radio" name="option" id="option">
+                <label for="payment">Cartão de Crédito</label>
+            </div>
+
+            <div>
+                <input type="radio" name="option" id="option">
+                <label for="payment">Cartão de Débito</label>
+            </div>
+
+            <div>
+                <input type="radio" name="option" id="option">
+                <label for="payment">Dinheiro</label>
+            </div>
+
+            <div>
+                <input type="radio" name="option" id="option">
+                <label for="payment">Pix</label>
+            </div>
+
+        </fieldset>
+
+        <div id="botao">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+
+</form>
+
+</body>
+</html>

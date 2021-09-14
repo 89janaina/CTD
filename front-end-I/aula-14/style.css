@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(182, 162, 131);
+}
+
+header {
+    width: 100%;
+    top: 0;
+    background-color: rgb(46, 22, 0);
+    position: sticky;
+    padding: 5px;
+    font-size: 28px;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+    left: 0;
+}
+
+h1{
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+
+fieldset {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: rgb(46, 22, 0);
+    padding: 10px;
+}
+
+legend {
+    font-size: 20px;
+    color: rgb(46, 22, 0);
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+  }
+
+#botao {
+    text-align: center;
+}
+
+button {
+   width: 15%;
+   height: 30px;
+   color: rgb(46, 22, 0);
+}
