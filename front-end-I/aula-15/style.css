@@ -1,0 +1,58 @@
+button {
+    border: none;
+    padding: 10px;
+    background-color: rgb(39, 185, 26);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(183, 0, 255);
+    transition-duration: 0.5s;
+}
+
+p::first-letter { 
+    font-size: 200%;
+    color: rgb(183, 0, 255);
+}
+
+.verde:focus {
+    color: rgb(39, 185, 26);
+}
+  
+.lilas:focus {
+    color: rgb(183, 0, 255);
+}
+
+.checkbox{
+    transition-duration: 0.5s;;
+}
+
+.checkbox:checked{
+    transform: scale(2);
+}
+
+.checkbox:checked ~ label {
+    color: rgb(183, 0, 255);
+}
+
+span {
+  padding: 10px;
+  border: 1px solid rgb(183, 0, 255);
+  display: inline-block;
+}
+
+.primeiro span:nth-child(2n+1){
+    color: rgb(183, 0, 255);
+}
+
+form {
+    padding: 10px;
+}
+
+input:enabled {
+background:rgb(183, 0, 255);
+}
+
+input:disabled {
+background: #dddddd;
+}
