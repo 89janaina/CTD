@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes basketball {
+
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+         opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate(100px);
+    }
+
+}
+
+
+#basketball {
+    text-align: center;
+    font-size: 100px;
+    animation: basketball 5s infinite alternate;
+}
+
+@keyframes et {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(50px);
+    }
+  }
+
+#et {
+    text-align: center;
+    font-size: 100px;
+    animation: et 3s infinite alternate;
+}
+
+button {
+    border:  1px solid blueviolet;
+    color: blueviolet;
+    padding: 12px 32px;
+    transition: 1s ease-in-out;
+    margin: 100px auto;
+    display: block;
+}
+
+button:hover {
+    color: white;
+    background-color: blueviolet;
+}
