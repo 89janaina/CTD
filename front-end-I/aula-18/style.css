@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&family=Scheherazade+New&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas:
+    'header header'
+    'aside main'
+    'footer footer';
+
+}
+
+body header {
+
+    background-color: rgb(238, 238, 238);
+    height: 100px;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+
+}
+
+header img {
+
+    width: 100px;
+    text-align: center;
+
+}
+
+#menu ul {
+
+    margin:0px;
+    list-style:none;
+
+}
+
+#menu li {
+
+    line-height: 50px;
+
+}
+
+.links {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.links:hover {
+
+    color: black;
+
+}
+
+body aside {
+
+    background-color: rgb(125, 34, 199);
+    grid-area: aside;
+    padding: 40px;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+body aside nav {
+
+    position: fixed;
+
+}
+
+body main {
+
+    background-color: white;
+    grid-area: main;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 24px;
+
+}
+
+body section {
+
+    color: black;
+    text-align: justify;
+    padding: 25px;
+
+}
+
+body section img {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+h1 {
+
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 70px;
+    color: rgb(125, 34, 199);
+
+}
+
+p {
+
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 20px;
+    color: grey;
+}
+
+body footer {
+
+    background-color: rgb(238, 238, 238);
+    height: 80px;
+    grid-area: footer;
+    padding: 20px;
+    z-index: 2;
+
+}
+
+body footer img {
+
+    width: 30px;
+
+}
+
+footer ul {
+
+    float: right;
+    display: table;
+
+}
+
+footer ul li {
+
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+
+}
