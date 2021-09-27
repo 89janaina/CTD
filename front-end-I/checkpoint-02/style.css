@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-image: url(./img/destino-rio-de-janeiro-brazil-para-conocer-el-cerro-del-corcovado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    font-family: Poppins;
+    grid-template-columns: 200px auto 200px;
+    grid-template-areas: 'header header header'
+                         'asideLeft main asideRight'
+                         'footer footer footer';
+}
+
+body header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    grid-area: header;
+    background-color: #4d4d4d36;
+    height: 100px;
+}
+
+body header img{
+    padding: 30px;
+}
+
+body header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px;
+    background-color: #37435a71;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    transition: 0.5s;
+}
+
+body header a:hover{
+    transform: scale(1.5);
+    background-color: #0051ff94;
+}
+
+.asideLeft{
+    grid-area: asideLeft;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body main{
+    grid-area: main;
+    background-color: #ffffff78;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    text-align: justify;
+    height: fit-content;
+    margin-top: 60px;
+}
+
+.bem-vindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 30px;
+
+}
+
+body aside{
+    height: calc(100vh - 200px);
+}
+
+.asideRight{
+    grid-area: asideRight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body footer{
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+    margin-left: 0;
+    background-color:#4d4d4d81;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-areas: 'footerLeft footerRight';
+}
+
+.footerLeft{
+    grid-area: footerLeft;
+    color: white;
+    bottom: 0;   
+    padding-left: 15px;
+    padding-top: 25px
+}
+
+.footerRight{
+    grid-area: footerRight;
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: 110px auto;
+    grid-template-areas: 'img descricao'
+                         'img descricao'
+                         'img descricao';
+}
+
+.description img{
+    grid-area: img;
+    image-rendering: auto;
+    height: 100px;
+}
+
+.description .sobre-conteudo p{
+    grid-area: descricao;
+    font-size: 12px;
+    padding-top: 15px;                     
+
+}
+
+.botao {
+    background-color: #008CBA;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.botao:hover {
+   background-color: #0051ff94;    
+
+}
+
+.botao a {
+    color: white;
+}
+
+.botao a span {
+    font-size: xx-large;
+}
+
+/* pagina passeios.html
+ */
+.boxes-conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    /* grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 'box1 box2 box3 box4' */;
+}
+
+.box-conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 200px;
+}
+
+.box-conteudo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+}
+
+.box-conteudo a {
+    color: black;
+    background-color: #eed85fad;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 12px;
+    transition: 1s;
+}
+
+.box-conteudo a:hover {
+    transform: scale(1.2);
+}
+
+.titulo {
+    padding-bottom: 15px;
+}
+
+fieldset {
+    border: 0;
+}
+
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+fieldset.grupo .area {
+    float:  left;
+    margin-right: 1em;
+}
+
+.area input[type="text"],
+.area input[type="email"],
+.area input[type="tel"],
+.area input[type="date"],
+.area select {
+    width: 300px;
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: block;
+}
+
+.area input[type="text"]:hover,
+.area input[type="email"]:hover,
+.area input[type="tel"]:hover,
+.area input[type="date"]:hover,
+.area input[type="radio"]:hover,
+.area input[type="radio"]:hover,
+.area select:hover {
+    transform: scale(1.2);
+}
+
+.area select option {
+    padding-right: 1em;
+}
+
+.area input:focus, .campo select:focus {
+    background: #FFC;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #0051ff94;  
+}
+
+button, select {
+    cursor: pointer;
+}
